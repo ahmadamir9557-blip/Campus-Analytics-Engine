@@ -24,7 +24,7 @@ CampusAnalyticsEngine/
     └── grades.txt        # created/maintained by the grades module
 ```
 
-## How to Compile
+## How to Run
 
 IN THE TERMINAL, TYPE
 ```bash
@@ -32,16 +32,6 @@ g++ -o campus_engine main.cpp filehandler.cpp student_ops.cpp course_ops.cpp att
 .\campus_engine.exe
 ```
 
-## How to Run
-
-```bash
-./campus_engine
-```
-
-You must run it from the folder that contains the `data/` subfolder,
-since all file paths in the code are relative (e.g. `data/students.txt`).
-On Windows (after compiling with g++/MinGW or in Visual Studio), just run
-`campus_engine.exe` from the same folder structure.
 
 ## Menu Overview
 
