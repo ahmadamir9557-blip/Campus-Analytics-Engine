@@ -254,12 +254,11 @@ void reportsMenu() {
 
 int main() {
     int choice;
-    cout << "=========================================\n";
     cout << "      CAMPUS ANALYTICS ENGINE\n";
-    cout << "=========================================\n";
+
 
     do {
-        cout << "\n========== MAIN MENU ==========\n";
+        cout << "\n MAIN MENU \n";
         cout << "1. Student Management\n";
         cout << "2. Course Management\n";
         cout << "3. Attendance\n";
