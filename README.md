@@ -30,7 +30,8 @@ From inside the project folder (the one containing `main.cpp` and the
 `data/` folder):
 
 ```bash
-g++ -std=c++98 -Wall -o campus_engine main.cpp filehandler.cpp student_ops.cpp course_ops.cpp attendance.cpp grades.cpp fee_tracker.cpp reports.cpp
+g++ -o campus_engine main.cpp filehandler.cpp student_ops.cpp course_ops.cpp attendance.cpp grades.cpp fee_tracker.cpp reports.cpp
+.\campus_engine.exe
 ```
 
 This has been tested and compiles with **zero errors and zero warnings**
