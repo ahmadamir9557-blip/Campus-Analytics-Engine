@@ -2,9 +2,7 @@
 
 A multi-file, menu-driven C++ console application for managing student
 records, course enrollments, attendance, grades, and fee transactions.
-Built only with fundamental C++ (no OOP, no STL algorithms, no `<ctime>`,
-no `<map>`).
-
+Built only with C++.
 ## File Structure
 
 ```
@@ -65,11 +63,8 @@ MAIN MENU
 ## Sample Run
 
 ```
-=========================================
-      CAMPUS ANALYTICS ENGINE
-=========================================
-
-========== MAIN MENU ==========
+      CAMPUS ANALYTICS ENGIN
+            MAIN MENU
 1. Student Management
 2. Course Management
 3. Attendance
@@ -133,12 +128,4 @@ Note: reading a single keystroke without waiting for Enter isn't
 standard C++ — it needs OS-specific code. The implementation uses
 `<conio.h>`'s `_getch()` on Windows, and a `<termios.h>`-based raw-mode
 reader on Linux/Mac, guarded by `#ifdef _WIN32`. This only works in a
-real terminal (TTY) — not if input is piped or redirected.
-
-## Known limitations / things to extend if you want extra polish
-
-- `printFeeDefaulters` estimates "weeks overdue" only for records already
-  marked `paid_late`; for currently-unpaid records it shows 0 weeks
-  overdue since there's no "today's date" without `<ctime>`. You could
-  add a manually-entered "current date" prompt in the menu to make this
-  more accurate.
+real terminal (TTY) — not if input is piped or redirected.-entered "current date" prompt in the menu to make this more accurate.
